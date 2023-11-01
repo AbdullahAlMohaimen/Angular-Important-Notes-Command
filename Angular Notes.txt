@@ -1,0 +1,122 @@
+SORT    (ASC)------------------------------------------------------------------------------------------------------------------>
+
+this.occupations.sort((a, b) => {
+	const nameA = a.name.toLowerCase();
+        const nameB = b.name.toLowerCase();
+        if (nameA < nameB) {
+		return -1;
+        }
+      	if (nameA > nameB) {
+		return 1;
+        }
+	return 0;
+});
+
+
+SORT  (DESC)------------------------------------------------------------------------------------------------------------------->
+
+this.occupations.sort((a, b) => {
+	const nameA = a.name.toLowerCase();
+        const nameB = b.name.toLowerCase();
+        if (nameA >nameB) {
+		return -1;
+        }
+      	if (nameA < nameB) {
+		return 1;
+        }
+	return 0;
+});
+
+
+KENDO GRID TOOLBAR TEMPLATE--------------------------------------------------------------------------------------->
+
+<ng-template kendoGridToolbarTemplate>
+     <button kendoGridAddCommand icon="add">Add New</button>
+</ng-template>
+
+
+
+KENDO CARD HEADER-------------------------------------------------------------------------------------------------------->
+
+<div class="k-card">
+   <div class="k-card-header" style="font-size: 15px;text-align: center; margin-bottom: 2px;">
+        Personal Information
+   </div>
+</div>
+
+
+ASTERISK SIGN   (MENDATORY  SIGN)   (PLACE HOLDER)------------------------------------------------------------>
+<span style="color:red;font-size: 16px;">*</span>
+
+<label for="username">Username <span style="color:red;font-size: 16px;">*</span></label>
+
+<input type="text" [(ngModel)]="txtName" placeholder="Enter Your Name" required>
+<input type="email" [(ngModel)]="txtEmail" placeholder="Enter Your Email" required>
+<input type="password" [(ngModel)]="txtPassword" placeholder="Enter Your Password" required>
+<input type="number" [(ngModel)]="txtNumber"  required>
+<input type="number" [(ngModel)]="txtName" placeholder="Enter Your Name" required>
+<input type="date" (ngModel)]="txtDate"  required>
+<input type="time" (ngModel)]="txtTime"  required>
+<input type="url" (ngModel)]="txtUrl"  required>
+<input type="checkbox" (ngModel)]="txtCheckbox"  required>
+<input type="radio" (ngModel)]="txtRadio"  required>
+<input type="file" required>
+<input type="hidden" >
+<input type="search">
+<input type="color">
+<input type="range">
+
+
+CUSTOM BUTTON ------------------------------------------------------------------------------------------------------------->
+
+<button kendoGridRemoveCommand style="color:white;background: #e72582;" icon="delete"></button>
+
+
+
+KENDO GRID BUTTON-------------------------------------------------------------------------------------------------------->
+
+<button kendoGridAddCommand icon="add">Add New</button>
+<button kendoGridEditCommand icon="edit"></button>
+<button kendoGridDeleteCommand>Delete</button>
+<button kendoGridCancelCommand>Cancel</button>
+<button kendoGridSaveCommand>Save</button>
+<button kendoGridExcelCommand>Export to Excel</button>
+<button kendoGridPDFCommand>Export to PDF</button>
+
+
+
+<button kendoButton [primary]="true"  icon="edit" ></button>
+
+
+(click)="onButtonClick()" [disabled]="true"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
